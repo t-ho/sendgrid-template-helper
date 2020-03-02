@@ -4,7 +4,7 @@
 
 # sendgrid-template-helper
 
-The Sendgrid wrapper helps to send an email with a dynamic template stored on disk. First, it tries to create a dynamic template on the Sendgrid server via [Sendgrid API v3](https://sendgrid.com/docs/API_Reference/api_v3.html), then caches the template ID locally for later uses.
+The Sendgrid wrapper helps to send an email with a dynamic template stored on disk. It tries to create a dynamic template on the Sendgrid server via [Sendgrid API v3](https://sendgrid.com/docs/API_Reference/api_v3.html), then caches the template ID locally for later uses.
 
 ## Installation
 
