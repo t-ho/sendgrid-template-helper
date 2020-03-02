@@ -1,6 +1,6 @@
 [![npm version](https://badge.fury.io/js/sendgrid-template-helper.svg)](https://badge.fury.io/js/sendgrid-template-helper)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![license](https://img.shields.io/npm/l/sendgrid-template-helper.svg)](https://github.com/t-ho/sendgrid-template-helper/blob/master/LICENSE)
+[![license](https://img.shields.io/npm/l/sendgrid-template-helper)](https://github.com/t-ho/sendgrid-template-helper/blob/master/LICENSE)
 
 # sendgrid-template-helper
 
