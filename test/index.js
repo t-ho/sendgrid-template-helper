@@ -87,7 +87,12 @@ describe('Functions', function() {
 
   before(function(done) {
     email = new Email({
-      apiKey: process.env.SENDGRID_API_KEY
+      apiKey: process.env.SENDGRID_API_KEY,
+      prefix:
+        Math.random()
+          .toString(36)
+          .substring(7)
+          .trim() + '_'
     });
     done();
   });
