@@ -13,10 +13,7 @@ email
     subject: `[Test] Sendgrid template helper`,
     templatePath: path.resolve(__dirname, './dynamic-email-template.html'),
     dynamicTemplateData: {
-      boxTitle: 'Testing',
-      username: 'user',
-      content: 'Test mail from sendgrid-template-helper.',
-      signature: 'The TDEV Team'
+      username: 'user'
     }
   })
   .then(() => {})
