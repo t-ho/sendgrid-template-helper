@@ -7,7 +7,7 @@
     "/lib"
   ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 10000 --exit --reporter landing"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/t-ho/sendgrid-template-helper/issues"
   },
-  "homepage": "https://github.com/t-ho/sendgrid-template-helper#readme",
+  "homepage": "https://github.tdev.app/sendgrid-template-helper",
   "dependencies": {
     "@sendgrid/client": "^6.5.3",
     "@sendgrid/mail": "^6.5.3",
