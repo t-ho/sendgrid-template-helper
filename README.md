@@ -49,11 +49,9 @@ email
     from: 'admin@tdev.app',
     subject: `[Test] Sendgrid template helper`,
     templatePath: path.resolve(__dirname, './dynamic-email-template.html'), // absolute path to your template
-    dynamicTemplateData: { // your dynamic template data
-      boxTitle: 'Testing',
-      username: 'user',
-      content: 'Test mail from sendgrid-template-helper.',
-      signature: 'The TDEV Team'
+    dynamicTemplateData: {
+      // your dynamic template data
+      username: 'user'
     }
   })
   .then(() => {})
@@ -69,3 +67,16 @@ For more use cases, please see [Sendgrid use cases](https://github.com/sendgrid/
 | `apiKey`      | _string_ | SendGrid API Key                                      |
 | `prefix`      | _string_ | The prefix used as namespace to create template name. |
 
+## Testing
+
+```bash
+# Export your SendGrid API Key
+export SENDGRID_API_KEY=YOUR_API_KEY
+
+# Run all tests
+npm test
+```
+
+## License
+
+[MIT &copy; t-ho](https://github.com/t-ho/sendgrid-template-helper/blob/master/LICENSE)
