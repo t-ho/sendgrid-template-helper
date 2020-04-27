@@ -22,16 +22,24 @@
   "bugs": {
     "url": "https://github.com/t-ho/sendgrid-template-helper/issues"
   },
-  "homepage": "https://github.tdev.app/sendgrid-template-helper",
+  "homepage": "https://tdev.app/sendgrid-template-helper",
   "dependencies": {
-    "@sendgrid/client": "^6.5.3",
-    "@sendgrid/mail": "^6.5.3",
+    "@sendgrid/client": "^7.0.1",
+    "@sendgrid/mail": "^7.0.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^7.1.0",
-    "sinon": "^9.0.0",
+    "husky": "^4.2.5",
+    "mocha": "^7.1.2",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }

@@ -34,26 +34,26 @@ export SENDGRID_API_KEY=YOUR_API_KEY
 To send an email with dynamic email template (template is on your disk):
 
 ```javascript
-const path = require('path');
-const Email = require('sendgrid-template-helper');
+const path = require("path");
+const Email = require("sendgrid-template-helper");
 
 const settings = {
   apiKey: process.env.SENDGRID_API_KEY,
-  prefix: 'your_app_name_'
+  prefix: "your_app_name_",
 };
 
 const email = new Email(settings);
 
 email
   .send({
-    to: 'user@tdev.app',
-    from: 'admin@tdev.app',
+    to: "user@tdev.app",
+    from: "admin@tdev.app",
     subject: `[Test] Sendgrid template helper`,
-    templatePath: path.resolve(__dirname, './dynamic-email-template.html'), // absolute path to your template
+    templatePath: path.resolve(__dirname, "./dynamic-email-template.html"), // absolute path to your template
     dynamicTemplateData: {
       // your dynamic template data
-      username: 'user'
-    }
+      username: "user",
+    },
   })
   .then(() => {})
   .catch(console.log);
