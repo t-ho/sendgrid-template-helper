@@ -24,8 +24,8 @@
   },
   "homepage": "https://tdev.app/sendgrid-template-helper",
   "dependencies": {
-    "@sendgrid/client": "^7.0.1",
-    "@sendgrid/mail": "^7.0.1",
+    "@sendgrid/client": "^7.1.1",
+    "@sendgrid/mail": "^7.1.1",
     "lodash": "^4.17.15"
   },
   "devDependencies": {
