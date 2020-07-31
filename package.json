@@ -7,7 +7,7 @@
     "/lib"
   ],
   "scripts": {
-    "test": "mocha --timeout 10000 --exit"
+    "test": "mocha --timeout 20000 --exit"
   },
   "repository": {
     "type": "git",
@@ -24,14 +24,14 @@
   },
   "homepage": "https://tdev.app/sendgrid-template-helper",
   "dependencies": {
-    "@sendgrid/client": "^7.1.1",
-    "@sendgrid/mail": "^7.1.1",
-    "lodash": "^4.17.15"
+    "@sendgrid/client": "^7.2.2",
+    "@sendgrid/mail": "^7.2.2",
+    "lodash": "^4.17.19"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "husky": "^4.2.5",
-    "mocha": "^7.1.2",
+    "mocha": "^7.2.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "sinon": "^9.0.2",
