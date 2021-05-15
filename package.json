@@ -7,7 +7,8 @@
     "/lib"
   ],
   "scripts": {
-    "test": "mocha --timeout 20000 --exit"
+    "test": "mocha --timeout 20000 --exit",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -24,22 +25,20 @@
   },
   "homepage": "https://tdev.app/sendgrid-template-helper",
   "dependencies": {
-    "@sendgrid/client": "^7.4.2",
-    "@sendgrid/mail": "^7.4.2",
-    "lodash": "^4.17.20"
+    "@sendgrid/client": "^7.4.3",
+    "@sendgrid/mail": "^7.4.4",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "chai": "^4.2.0",
-    "husky": "^4.3.8",
-    "mocha": "^8.2.1",
-    "prettier": "^2.2.1",
-    "pretty-quick": "^3.1.0",
-    "sinon": "^9.2.4",
-    "sinon-chai": "^3.5.0"
+    "chai": "^4.3.4",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "mocha": "^8.4.0",
+    "prettier": "^2.3.0",
+    "sinon": "^10.0.0",
+    "sinon-chai": "^3.6.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
